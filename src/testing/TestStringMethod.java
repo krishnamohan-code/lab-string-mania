@@ -4,17 +4,18 @@ import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
+import utility.StringBoolean;
 import utility.StringMethod;
 
 public class TestStringMethod {
-	StringMethod sm = new StringMethod();
+	StringBoolean sm = new StringBoolean();
 
 	@Test
 	public void testSetInputsMethod() {
-		sm.setInput("Java");
-		assertEquals("Java", sm.getInput());
+		sm.setInput1("Java");
+		assertEquals("Java", sm.getInput1());
 		try {
-			sm.setInput(null);
+			sm.setInput1(null);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
